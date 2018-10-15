@@ -18,12 +18,26 @@ module.exports = {
         "eventsource",
         "file-saver",
         "highcharts",
+        "highcharts/modules/stock",
+        "highcharts/modules/exporting",
         "json-pointer",
         "jsonlint-mod",
         "vue-codemirror",
+        "codemirror/lib/codemirror.css",
+        "codemirror/mode/javascript/javascript.js",
+        "codemirror/addon/edit/matchbrackets.js",
+        "codemirror/addon/edit/closebrackets.js",
+        "codemirror/addon/fold/foldcode.js",
+        "codemirror/addon/fold/foldgutter.js",
+        "codemirror/addon/fold/foldgutter.css",
+        "codemirror/addon/fold/brace-fold.js",
+        "codemirror/addon/lint/lint.js",
+        "codemirror/addon/lint/lint.css",
         "vue-highcharts",
         "vue-markdown",
-        "vuelidate"
+        "vuelidate",
+        "axios",
+        "lodash"
     ],
 	output: {
 		filename: "vendor.js",
@@ -64,11 +78,11 @@ module.exports = {
         ]
     },
 	plugins: [
-        new VueLoaderPlugin(),
+    new VueLoaderPlugin(),
 		new webpack.DllPlugin({
-            name: "vendor_lib_[hash]",
+      name: "vendor_lib_[hash]",
 			path: path.resolve(__dirname, "dist/vendor-manifest.json")
 		}),
-        new BundleAnalyzerPlugin()
+    new BundleAnalyzerPlugin()
 	]
 };

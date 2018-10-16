@@ -41,8 +41,8 @@ module.exports = {
     ],
 	output: {
 		filename: "vendor.js",
-        path: path.resolve(__dirname, "dist"),
-		library: "vendor_lib_[hash]"
+		path: path.resolve(__dirname, "dist"),
+		library: "vendor_lib"
 	},
     module: {
         rules: [
@@ -78,11 +78,11 @@ module.exports = {
         ]
     },
 	plugins: [
-    new VueLoaderPlugin(),
+		new VueLoaderPlugin(),
 		new webpack.DllPlugin({
-      name: "vendor_lib_[hash]",
-			path: path.resolve(__dirname, "dist/vendor-manifest.json")
+		    name: "vendor_lib",
+		    path: path.resolve(__dirname, "dist/vendor-manifest.json")
 		}),
-    new BundleAnalyzerPlugin()
+		new BundleAnalyzerPlugin()
 	]
 };

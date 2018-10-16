@@ -13,6 +13,7 @@ module.exports = {
         extensions: ['.js', '.vue', '.css']
     },
 	entry: [
+        "vue",
         "cronstrue",
         "csvtojson",
         "eventsource",

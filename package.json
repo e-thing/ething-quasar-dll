@@ -33,6 +33,7 @@
     "build": "webpack --config webpack.config.js --progress --display-modules"
   },
   "dependencies": {
+    "vue": "^2.5.17",
     "axios": "^0.18.0",
     "cronstrue": "^1.31.0",
     "csvtojson": "^2.0.6",

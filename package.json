@@ -33,7 +33,6 @@
     "build": "webpack --config webpack.config.js --progress --display-modules"
   },
   "dependencies": {
-    "vue": "^2.5.17",
     "axios": "^0.18.0",
     "cronstrue": "^1.31.0",
     "csvtojson": "^2.0.6",
@@ -43,6 +42,8 @@
     "json-pointer": "^0.6.0",
     "jsonlint-mod": "^1.7.2",
     "lodash": "^4.17.11",
+    "socket.io-client": "^2.1.1",
+    "vue": "^2.5.17",
     "vue-codemirror": "^4.0.5",
     "vue-highcharts": "0.0.10",
     "vue-markdown": "^2.2.4",

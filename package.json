@@ -43,6 +43,7 @@
     "jsonlint-mod": "^1.7.2",
     "lodash": "^4.17.11",
     "socket.io-client": "^2.1.1",
+    "socketio-wildcard": "^2.0.0",
     "vue": "^2.5.17",
     "vue-codemirror": "^4.0.5",
     "vue-highcharts": "0.0.10",

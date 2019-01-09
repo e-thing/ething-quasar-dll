@@ -26,6 +26,8 @@ module.exports = {
         "vue-codemirror",
         "codemirror/lib/codemirror.css",
         "codemirror/mode/javascript/javascript.js",
+        "codemirror/mode/yaml/yaml.js",
+        "codemirror/mode/python/python.js",
         "codemirror/addon/edit/matchbrackets.js",
         "codemirror/addon/edit/closebrackets.js",
         "codemirror/addon/fold/foldcode.js",
@@ -38,7 +40,9 @@ module.exports = {
         "vue-markdown",
         "vuelidate",
         "axios",
-        "lodash"
+        "lodash",
+        "jsplumb",
+        "jsplumb/css/jsplumbtoolkit-defaults.css"
     ],
 	output: {
 		filename: "vendor.js",
